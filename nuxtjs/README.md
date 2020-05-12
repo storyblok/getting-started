@@ -1,6 +1,17 @@
-# Getting Started Nuxt.js edition
+# Getting Started - Nuxt.js edition
 
-> Simple hello world project built with Storyblok and Nuxt.js
+This is example `Hello World` project built with Storyblok and Nuxt.js.
+
+> To get better understanding of this project and how it works, read our [Getting Started guide](#).
+
+## Configuration Steps
+
+1. Create new Space in Storyblok
+2. Obtain Preview Token from the Settings of the Space.
+3. Replace the `accessToken` value in `nuxt.config.js` file with your Preview Token.
+4. Your Nuxt.js project can be started and will consume data from your Storyblok Space.
+
+> For more advanced article on how to build multilanguage website with Storyblok and Nuxt.js, check our [The Complete Guide to Build a Full Blown Multilanguage Website with Nuxt.js](https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial).
 
 ## Build Setup
 
@@ -19,4 +30,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+> For detailed explanation on how Nuxt.js work, check out [Nuxt.js docs](https://nuxtjs.org).
