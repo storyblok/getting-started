@@ -4,6 +4,10 @@ This is example `Hello World` project built with Storyblok and Nuxt.js.
 
 > To get better understanding of this project and how it works, read our [Getting Started guide](#).
 
+## Codesandbox
+
+[![Edit getting-started-nuxtjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/master/nuxtjs?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Configuration Steps
 
 1. Create new Space in Storyblok
