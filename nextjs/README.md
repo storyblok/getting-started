@@ -6,7 +6,7 @@ This is example `Hello World` project built with Storyblok and Next.js.
 
 ## Codesandbox
 
-[![Edit getting-started-nuxtjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/nextjs/nextjs)
+[![Edit getting-started-nuxtjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/master/nextjs)
 
 ## Configuration Steps
 
