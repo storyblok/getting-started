@@ -1,0 +1,31 @@
+{
+  "name": "gatsbyjs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Gatsby site",
+  "author": "Lisi Linhart",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "storyblok-react": "^0.1.1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-postcss": "^3.3.0",
+    "gatsby-plugin-sharp": "^2.10.0",
+    "gatsby-transformer-sharp": "^2.8.0",
+    "postcss": "^8.1.13",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
