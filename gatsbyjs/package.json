@@ -23,6 +23,7 @@
   "devDependencies": {
     "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-sharp": "^2.10.0",
+    "gatsby-source-storyblok": "^1.2.0",
     "gatsby-transformer-sharp": "^2.8.0",
     "postcss": "^8.1.13",
     "postcss-preset-env": "^6.7.0",
