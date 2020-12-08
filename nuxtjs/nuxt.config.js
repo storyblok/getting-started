@@ -1,6 +1,5 @@
 
 export default {
-  target: 'server',
   /*
   ** Headers of the page
   */
