@@ -15,18 +15,18 @@
     },
     "license": "0BSD",
     "dependencies": {
-        "gatsby": "^2.26.1",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "storyblok-react": "^0.1.1"
+        "gatsby": "^3.5.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "storyblok-react": "^0.1.2"
     },
     "devDependencies": {
-        "gatsby-plugin-postcss": "^3.3.0",
-        "gatsby-plugin-sharp": "^2.10.0",
-        "gatsby-source-storyblok": "^1.2.0",
-        "gatsby-transformer-sharp": "^2.8.0",
-        "postcss": "^8.1.13",
+        "gatsby-plugin-postcss": "^4.5.0",
+        "gatsby-plugin-sharp": "^3.5.0",
+        "gatsby-source-storyblok": "^3.0.1",
+        "gatsby-transformer-sharp": "^3.5.0",
+        "postcss": "^8.2.15",
         "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^1.9.5"
+        "tailwindcss": "^2.1.2"
     }
 }
