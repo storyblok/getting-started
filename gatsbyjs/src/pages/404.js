@@ -3,7 +3,7 @@ import SbEditable from 'storyblok-react'
 
 import Layout from "../components/layout"
 import DynamicComponent from "../components/DynamicComponent"
-import useStoryblok from "../utils/storyblok"
+import useStoryblok from "../utils/storyblok-service"
 
 const NotFoundPage = ({ location }) => { 
   let components = null
