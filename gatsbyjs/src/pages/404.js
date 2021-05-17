@@ -1,26 +1,20 @@
 import * as React from "react"
-import SbEditable from 'storyblok-react'
 
-import Layout from "../components/layout"
-import DynamicComponent from "../components/DynamicComponent"
+import Page from "../components/Page";
+import Layout from "../components/Layout"
 import useStoryblok from "../utils/storyblok-service"
 
 const NotFoundPage = ({ location }) => { 
-  let components = null
+  let content = (<h1>Not Found</h1>)
   let story = useStoryblok(null, location)
 
   if(story) {
-    components = story.content.body.map(blok => {
-      return (<DynamicComponent blok={blok} key={blok._uid} />)
-    })
+    content = (<Page blok={story.content} />)
   }
 
   return (
   <Layout>
-    <SbEditable content={story ? story.content : false }>
-    <h1>{ story ? story.name : 'Not Found' }</h1>
-    { components }
-    </SbEditable>
+    { content }
   </Layout>
 )}
 
