@@ -6,25 +6,42 @@ export default function useStoryblok(originalStory) {
 
     // adds the events for updating the visual editor
     // see https://www.storyblok.com/docs/guide/essentials/visual-editor#initializing-the-storyblok-js-bridge
-  function initEventListeners() {
-    if (window.storyblok) {
-      window.storyblok.init();
+    function initEventListeners() {
+      const { StoryblokBridge } = window
+      if (typeof StoryblokBridge !== "undefined") {
+        // initialize the bridge with your token
+        const storyblokInstance = new StoryblokBridge();
+  
+        // reload on Next.js page on save or publish event in the Visual Editor
+        storyblokInstance.on(["change", "published"], () =>
+          location.reload(true)
+        );
+  
+        // live update the story on input events
+        storyblokInstance.on("input", (event) => {
+          if (event.story._uid === story._uid) {
+            setStory(event.story);
+          }
+        });
 
-      // reload on Next.js page on save or publish event in the Visual Editor
-      window.storyblok.on(["change", "published"], () => location.reload(true));
-
-      // live update the story on input events
-      window.storyblok.on("input", (event) => {
-        if (event.story.content._uid === story.content._uid) {
-          event.story.content = window.storyblok.addComments(
-            event.story.content,
-            event.story.id
-          );
-          setStory(event.story);
-        }
-      });
+        // live update the story on enter editor
+        storyblokInstance.on("enterEditmode", (event) => {
+          Storyblok
+          .get(`cdn/stories/${event.storyId}`, {
+            version: 'draft',
+          })
+          .then(({ data }) => {
+            if(data.story) {
+              setStory(data.story)
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          }) 
+        });
+      }
     }
-  }
+  
 
   // appends the bridge script tag to our document
   // see https://www.storyblok.com/docs/guide/essentials/visual-editor#installing-the-storyblok-js-bridge
@@ -33,7 +50,7 @@ export default function useStoryblok(originalStory) {
     const existingScript = document.getElementById("storyblokBridge");
     if (!existingScript) {
       const script = document.createElement("script");
-      script.src = `https://app.storyblok.com/f/storyblok-latest.js?t=${Storyblok.accessToken}`;
+      script.src = "//app.storyblok.com/f/storyblok-v2-latest.js";
       script.id = "storyblokBridge";
       document.body.appendChild(script);
       script.onload = () => {
@@ -41,14 +58,14 @@ export default function useStoryblok(originalStory) {
         callback();
       };
     } else {
-        callback();
+      callback();
     }
   }
 
   useEffect(() => {
     // first load the bridge, then initialize the event listeners
     addBridge(initEventListeners);
-  });
+  }, []);
 
   return story;
 }
