@@ -1,37 +1,46 @@
-import React from 'react'
-import Page from '../components/Page'
 import Layout from '../components/Layout'
-import StoryblokService from '../utils/storyblok-service'
+import Page from '../components/Page'
 
-export default class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      story: props.res.data.story
-    }
+// The Storyblok Client
+import Storyblok from "../lib/storyblok"
+import useStoryblok from "../lib/storyblok-hook"
+
+export default function Home(props) {
+  // the Storyblok hook to enable live updates
+  const story = useStoryblok(props.story)
+
+  return (
+    <Layout>
+      <Page content={story.content} />
+    </Layout>
+  )
+}
+
+export async function getStaticProps(context) {
+  // the slug of the story
+  let slug = "home"
+  // the storyblok params
+  let params = {
+    version: "draft", // or 'published'
   }
 
-  static async getInitialProps({ query }) {
-    StoryblokService.setQuery(query)
-
-    let res = await StoryblokService.get('cdn/stories/home')
-
-    return {
-      res
-    }
+  // checks if Next.js is in preview mode
+  if (context.preview) {
+    // loads the draft version
+    params.version = "draft"
+    // appends the cache version to get the latest content
+    params.cv = Date.now()
   }
 
-  componentDidMount() {
-    StoryblokService.initEditor(this)
-  }
+  // loads the story from the Storyblok API
+  let { data } = await Storyblok.get(`cdn/stories/${slug}`, params)
 
-  render() {
-    const contentOfStory = this.state.story.content
-
-    return (
-      <Layout>
-        <Page content={contentOfStory} />
-      </Layout>
-    )
+  // return the story from Storyblok and whether preview mode is active
+  return {
+    props: {
+      story: data ? data.story : false,
+      preview: context.preview || false
+    },
+    revalidate: 10,
   }
 }

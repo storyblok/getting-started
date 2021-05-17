@@ -9,7 +9,7 @@ const Components = {
     'grid': Grid,
 }
 
-const Component = ({ blok }) => {
+const DynamicComponent = ({ blok }) => {
     if (typeof Components[blok.component] !== 'undefined') {
         const Component = Components[blok.component]
         return <Component blok = { blok }
@@ -18,4 +18,4 @@ const Component = ({ blok }) => {
     return <Placeholder componentName = { blok.component } />
 }
 
-export default Component
+export default DynamicComponent

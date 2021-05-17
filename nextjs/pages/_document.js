@@ -1,12 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import StoryblokService from '../utils/storyblok-service'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
-         <Head>
-          <script dangerouslySetInnerHTML={{__html: `var StoryblokCacheVersion = '${StoryblokService.getCacheVersion()}';` }}></script>
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
