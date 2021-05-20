@@ -17,4 +17,4 @@ Visit our technology hubs for more tutorials and videos how to use Storyblok tog
 - [Next.js Hub](https://www.storyblok.com/tc/nextjs)
 - [Gatsby.js Hub](https://www.storyblok.com/tc/gatsbyjs)
 - [Nuxt Hub](https://www.storyblok.com/tc/nuxtjs)
-- For other languages/frameworks check the tutorial on our (technology page overview)[https://www.storyblok.com/technologies]
+- For other languages/frameworks check the tutorial on our [technology page overview](https://www.storyblok.com/technologies)
