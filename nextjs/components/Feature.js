@@ -1,12 +1,10 @@
-import SbEditable from "storyblok-react";
+import { sbEditable } from "@storyblok/storyblok-editable";
 
 const Feature = ({ blok }) => {
   return (
-    <SbEditable content={blok}>
-      <div className="py-2">
-        <h2 className="text-lg"> {blok.name} </h2>
-      </div>
-    </SbEditable>
+    <div className="py-2" {...sbEditable(blok)} key={blok._uid}>
+      <h2 className="text-lg"> {blok.name} </h2>
+    </div>
   );
 };
 
