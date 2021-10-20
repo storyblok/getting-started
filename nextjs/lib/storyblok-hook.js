@@ -63,6 +63,10 @@ export default function useStoryblok(originalStory) {
   }
 
   useEffect(() => {
+    setStory(originalStory);
+  }, [originalStory]);
+
+  useEffect(() => {
     // first load the bridge, then initialize the event listeners
     addBridge(initEventListeners);
   }, []);
