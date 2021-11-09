@@ -1,16 +1,14 @@
 import React from "react";
-import SbEditable from "storyblok-react";
+import { sbEditable } from "@storyblok/storyblok-editable";
 
 export default class extends React.Component {
   render() {
     const { blok } = this.props;
 
     return (
-      <SbEditable content={blok}>
-        <div className="py-8 mb-6">
-          <h2 className="text-5xl font-bold text-center"> {blok.headline} </h2>
-        </div>
-      </SbEditable>
+      <div className="py-8 mb-6" {...sbEditable(blok)} key={blok._uid}>
+        <h2 className="text-5xl font-bold text-center"> {blok.headline} </h2>
+      </div>
     );
   }
 }
