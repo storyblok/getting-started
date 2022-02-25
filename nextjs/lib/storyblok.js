@@ -1,11 +1,21 @@
-import StoryblokClient from 'storyblok-js-client'
+import { useEffect, useState } from "react";
+import { storyblokInit, apiPlugin, useStoryblokBridge } from "@storyblok/js";
 
-const Storyblok = new StoryblokClient({
-    accessToken: 'd6IKUtAUDiKyAhpJtrLFcwtt',
-    cache: {
-      clear: 'auto',
-      type: 'memory'
-    }
-})
+const { storyblokApi } = storyblokInit({
+  accessToken: "d6IKUtAUDiKyAhpJtrLFcwtt",
+  use: [apiPlugin],
+});
 
-export default Storyblok
+export function useStoryblok(originalStory) {
+  let [story, setStory] = useState(originalStory);
+
+  useStoryblokBridge(story.id, (newStory) => setStory(newStory));
+
+  useEffect(() => {
+    setStory(originalStory);
+  }, [originalStory]);
+
+  return story;
+}
+
+export default storyblokApi;

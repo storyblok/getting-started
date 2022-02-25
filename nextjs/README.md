@@ -1,8 +1,8 @@
 # Getting Started - Next.js edition
 
-This is example `Hello World` project built with Storyblok and Next.js.
+This is a `Hello World` example project built with Storyblok and Next.js.
 
-> To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started).
+> To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
 
 ## Codesandbox
 
@@ -10,12 +10,12 @@ This is example `Hello World` project built with Storyblok and Next.js.
 
 ## Configuration Steps
 
-1. Create a new Space in Storyblok
+1. [Create a new Space](https://app.storyblok.com/#!/me/spaces/new) in Storyblok
 2. Obtain a Preview Token from the Settings of the Space.
-3. Replace the `this.token` value in `utils/storyblok-service.js` file with your Preview Token.
-4. Your Next.js project can be started and will consume data from your Storyblok Space.
+3. Replace the `accessToken` value in `lib/storyblok.js` file with your Preview Token.
+4. You can start a Dev Server with your Next.js project, and it will consume data from your Storyblok Space.
 
-> For more advanced article on how to build multilanguage website with Storyblok and Next.js, check our [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/next-js-react-guide).
+> For a more advanced article on how to build a multilanguage website using Storyblok and Next.js, check [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/next-js-react-guide/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
 
 ## Learn More
 
@@ -28,6 +28,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
