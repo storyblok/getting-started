@@ -1,4 +1,4 @@
-import { storyblokEditable } from "@storyblok/js";
+import { storyblokEditable } from "@storyblok/react";
 
 const Teaser = ({ blok }) => {
   return (

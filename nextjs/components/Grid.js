@@ -1,11 +1,10 @@
-import DynamicComponent from "./DynamicComponent";
-import { storyblokEditable } from "@storyblok/js";
+import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const Grid = ({ blok }) => (
   <ul className="flex py-8 mb-6" {...storyblokEditable(blok)} key={blok._uid}>
     {blok.columns.map((blok) => (
       <li key={blok._uid} className="flex-auto px-6">
-        <DynamicComponent blok={blok} />
+        <StoryblokComponent blok={blok} />
       </li>
     ))}
   </ul>
