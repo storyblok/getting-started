@@ -29,6 +29,7 @@ export async function getStaticProps() {
   return {
     props: {
       story: data ? data.story : false,
+      key: data ? data.story.id : false,
     },
   };
 }
