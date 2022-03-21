@@ -1,10 +1,9 @@
-import DynamicComponent from "./DynamicComponent";
-import { sbEditable } from "@storyblok/storyblok-editable";
+import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
-const Page = ({ content }) => (
-  <main className="px-6" {...sbEditable(content)}>
-    {content.body.map((blok) => (
-      <DynamicComponent blok={blok} key={blok._uid} />
+const Page = ({ blok }) => (
+  <main className="px-6" {...storyblokEditable(blok)} key={blok._uid}>
+    {blok.body.map((nestedBlok) => (
+      <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
     ))}
   </main>
 );
