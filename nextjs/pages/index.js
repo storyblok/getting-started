@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import {
   useStoryblokState,
-  useStoryblokApi,
+  getStoryblokApi,
   StoryblokComponent,
 } from "@storyblok/react";
 
@@ -23,7 +23,7 @@ export async function getStaticProps() {
     version: "draft", // or 'published'
   };
 
-  const storyblokApi = useStoryblokApi();
+  const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, params);
 
   return {
