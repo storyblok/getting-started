@@ -6,13 +6,13 @@ This is a `Hello World` example project built with Storyblok and Next.js.
 
 ## Codesandbox
 
-[![Edit getting-started-nuxtjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/master/nextjs)
+[![Edit getting-started-nextjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/master/nextjs)
 
 ## Configuration Steps
 
 1. [Create a new Space](https://app.storyblok.com/#!/me/spaces/new) in Storyblok
 2. Obtain a Preview Token from the Settings of the Space.
-3. Replace the `accessToken` value in `lib/storyblok.js` file with your Preview Token.
+3. Replace the `accessToken` value in `pages/_app.js` file with your Preview Token.
 4. You can start a Dev Server with your Next.js project, and it will consume data from your Storyblok Space.
 
 > For a more advanced article on how to build a multilanguage website using Storyblok and Next.js, check [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/next-js-react-guide/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
