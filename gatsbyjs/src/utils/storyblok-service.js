@@ -4,7 +4,6 @@ import { useStoryblokBridge } from "@storyblok/js";
 export function useStoryblok(originalStory) {
   const storyCopy = { ...originalStory }
   if (typeof storyCopy.content === "string") storyCopy.content = JSON.parse(storyCopy.content)
-  console.log(storyCopy)
 
   const modifiedId = storyCopy.id.split('-')
   storyCopy.id = parseInt(modifiedId[1])
