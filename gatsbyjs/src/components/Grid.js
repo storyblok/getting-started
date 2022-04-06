@@ -1,3 +1,4 @@
+import React from "react";
 import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 
 const Grid = ({ blok }) => (

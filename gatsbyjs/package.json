@@ -15,9 +15,7 @@
   },
   "license": "0BSD",
   "dependencies": {
-    "@storyblok/js": "^1.0.4",
     "@storyblok/react": "^1.0.4",
-    "@storyblok/storyblok-editable": "^1.0.0",
     "gatsby": "^4.11.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

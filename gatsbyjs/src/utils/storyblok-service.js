@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useStoryblokBridge } from "@storyblok/js";
+import { useStoryblokBridge } from "@storyblok/react";
 
 export function useStoryblok(originalStory) {
   const storyCopy = { ...originalStory }
