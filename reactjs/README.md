@@ -6,7 +6,7 @@ This is a `Hello World` example project built with Storyblok and Next.js.
 
 ## Codesandbox
 
-[![Edit getting-started-react](https://codesandbox.io/static/img/play-codesandbox.svg)](#)
+[![Edit getting-started-react](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/storyblok/getting-started/tree/master/reactjs)
 
 ## Configuration Steps
 
