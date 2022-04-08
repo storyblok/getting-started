@@ -1,0 +1,21 @@
+{
+  "name": "getting-started-sveltekit",
+  "version": "0.0.1",
+  "description": "My outstanding SvelteKit project",
+  "author": "Josefine Schaefer",
+  "private": true,
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build"
+  },
+  "devDependencies": {
+    "svelte": "^3.44.0",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next"
+  },
+  "type": "module",
+  "dependencies": {
+    "@storyblok/svelte": "^2.0.1",
+    "axios": "^0.26.1"
+  }
+}
