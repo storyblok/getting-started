@@ -9,6 +9,7 @@ Follow the instruction on [Storyblok Getting Started Page](https://www.storyblok
 - Next.js
 - Gatsby.js
 - Nuxt
+- SvelteKit
 
 ### Resources
 
