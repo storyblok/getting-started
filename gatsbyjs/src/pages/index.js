@@ -1,16 +1,37 @@
 import React from "react";
-import Page from "../components/Page";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import useStoryblok from "../utils/storyblok-service"
+import configuration from '../../gatsby-config'
+import { useStoryblok } from "../utils/storyblok-service"
+import { storyblokInit, apiPlugin, StoryblokComponent, storyblokEditable } from "@storyblok/react";
+
+import Teaser from '../components/teaser'
+import Grid from '../components/grid'
+import Feature from '../components/feature'
+
+const sbConfig = configuration.plugins.find((item) => item.resolve === 'gatsby-source-storyblok')
+
+storyblokInit({
+  accessToken: sbConfig.options.accessToken,
+  use: [apiPlugin],
+  components: {
+    teaser: Teaser,
+    grid: Grid,
+    feature: Feature,
+  }
+})
 
 const IndexPage = ({ data, location }) => {
   let story = data.story;
-  story = useStoryblok(story, location);
+  story = useStoryblok(story);
+
+  const components = story.content.body.map(blok => (<StoryblokComponent blok={blok} key={blok._uid} />))
 
   return (
     <Layout location={location}>
-      <Page blok={story.content} />
+      <div {...storyblokEditable(story.content)}>
+        {components}
+      </div>
     </Layout>
   );
 };
@@ -23,6 +44,7 @@ export const query = graphql`
       content
       full_slug
       uuid
+      id
     }
   }
 `;
