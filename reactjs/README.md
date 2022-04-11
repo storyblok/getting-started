@@ -4,9 +4,9 @@ This is a `Hello World` example project built with Storyblok and Next.js.
 
 > To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
 
-## Codesandbox
+## Stackblitz
 
-[![Edit getting-started-react](https://blog.stackblitz.com/img/favicon.png?hash=3817f5a9d1)]()
+[Edit with Stackblitz ⚡️]()
 
 ## Configuration Steps
 
