@@ -6,7 +6,7 @@ This is a `Hello World` example project built with Storyblok and Next.js.
 
 ## Stackblitz
 
-[Edit with Stackblitz ⚡️]()
+[Edit with Stackblitz ⚡️](https://stackblitz.com/edit/getting-started-react)
 
 ## Configuration Steps
 
