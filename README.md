@@ -10,6 +10,7 @@ Follow the instruction on [Storyblok Getting Started Page](https://www.storyblok
 - Gatsby.js
 - Nuxt
 - React
+- SvelteKit
 
 ### Resources
 
