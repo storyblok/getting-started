@@ -9,6 +9,7 @@ Follow the instruction on [Storyblok Getting Started Page](https://www.storyblok
 - Next.js
 - Gatsby.js
 - Nuxt
+- React
 - SvelteKit
 
 ### Resources
@@ -18,4 +19,5 @@ Visit our technology hubs for more tutorials and videos how to use Storyblok tog
 - [Next.js Hub](https://www.storyblok.com/tc/nextjs)
 - [Gatsby.js Hub](https://www.storyblok.com/tc/gatsbyjs)
 - [Nuxt Hub](https://www.storyblok.com/tc/nuxtjs)
+- [React Hub](https://www.storyblok.com/tc/react)
 - For other languages/frameworks check the tutorial on our [technology page overview](https://www.storyblok.com/technologies)
