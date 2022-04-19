@@ -5,16 +5,7 @@ This is a `Hello World` example project built with Storyblok and Next.js.
 > To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
 
 ## Stackblitz
-
-<a href="https://stackblitz.com/edit/getting-started-next" target="_blank" style="text-decoration: none;display:block;text-align:center">
-  <button style="background:#282828;margin:30px 0;padding:5px 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);border-radius:10px;border:none;cursor:pointer">
-    <span style="display:flex;justify-content:center">
-    <img src="https://blog.stackblitz.com/img/favicon.png?hash=3817f5a9d1" alt="Stackblitz button" style="max-width:225px;max-height:40px"> 
-    <span style="color:white;align-self:center;padding:0 10px;font-size:16px;letter-spacing:1px">Edit on <strong>Stackblitz</strong></span>
-    </span>
-  </button>
-</a>
-
+[Edit with Stackblitz ⚡️](https://stackblitz.com/edit/getting-started-next)
 
 ## Configuration Steps
 
