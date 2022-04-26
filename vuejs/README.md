@@ -16,7 +16,7 @@ This is an example `Hello World` project built with Storyblok and Vue.
 3. Replace the `accessToken` value in `src/main.js` file with your Preview Token.
 4. Your Vue project can be started and will consume data from your Storyblok Space.
 
-> For a more detailed article on how to integrate Storyblok in Vue, check out [Add a headless CMS to Vue in 5 minutes](https://www.storyblok.com/tp/add-a-headless-CMS-to-vuejs-in-5-minutes).
+> For a more detailed article on how to integrate Storyblok in Vue, check out [Add a headless CMS to VueJS in 5 minutes](https://www.storyblok.com/tp/add-a-headless-CMS-to-vuejs-in-5-minutes).
 
 ## Build Setup
 
