@@ -1,12 +1,12 @@
-# Getting Started - Nuxt edition
+# Getting Started - Nuxt 3 edition
 
-This is an example `Hello World` project built with Storyblok and Nuxt.
+This is an example `Hello World` project built with Storyblok and Nuxt 3.
 
 > To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started).
 
 ## Stackblitz 
 
-[Edit on Stackblitz](https://stackblitz.com/edit/nuxt-5-minutes)
+[Edit on Stackblitz](https://stackblitz.com/edit/nuxt-3-sdk-demo)
 
 
 ## Configuration Steps
@@ -15,8 +15,6 @@ This is an example `Hello World` project built with Storyblok and Nuxt.
 2. Obtain the Preview Token from the Settings of the Space.
 3. Replace the `accessToken` value in `nuxt.config.js` file with your Preview Token.
 4. Your Nuxt project can be started and will consume data from your Storyblok Space.
-
-> For a more detailed article on how to integrate Storyblok in Nuxt, check out [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs).
 
 ## Build Setup
 
@@ -31,4 +29,4 @@ $ npm run dev
 $ npm run build
 ```
 
-> For detailed explanation on how Nuxt works, check out the [Nuxt docs](https://nuxtjs.org/docs/get-started/installation).
+> For detailed explanation on how Nuxt 3 works, check out the [Nuxt 3 docs](https://v3.nuxtjs.org/guide/concepts/introduction).
