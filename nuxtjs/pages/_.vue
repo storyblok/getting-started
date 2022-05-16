@@ -1,6 +1,6 @@
 <script setup>
 import { useRoute } from '@nuxtjs/composition-api'
-import { useStoryblok } from '@storyblok/nuxt'
+import { useStoryblok } from '@storyblok/nuxt-2'
 
 const route = useRoute()
 const slug = route.value.params.pathMatch
