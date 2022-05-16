@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref, useFetch } from '@nuxtjs/composition-api'
-import { useStoryblokBridge, useStoryblokApi } from '@storyblok/nuxt'
+import { useStoryblokBridge, useStoryblokApi } from '@storyblok/nuxt-2'
 
 const story = ref(null)
 

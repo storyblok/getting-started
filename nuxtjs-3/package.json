@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-starter",
+  "name": "nuxt-3-getting-started",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@storyblok/nuxt-beta": "^2.2.0",
+    "@storyblok/nuxt": "^4.0.1",
     "axios": "^0.26.0",
     "nuxt": "^3.0.0-rc.2"
   }
