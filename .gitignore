@@ -74,6 +74,9 @@ dist
 # vuepress build output
 .vuepress/dist
 
+# sveltekit build output
+.svelte-kit
+
 # Serverless directories
 .serverless
 

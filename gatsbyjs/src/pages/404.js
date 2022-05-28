@@ -4,18 +4,19 @@ import Page from "../components/Page";
 import Layout from "../components/Layout"
 import useStoryblok from "../utils/storyblok-service"
 
-const NotFoundPage = ({ location }) => { 
+const NotFoundPage = () => {
   let content = (<h1>Not Found</h1>)
-  let story = useStoryblok(null, location)
+  let story = useStoryblok(null)
 
-  if(story) {
+  if (story) {
     content = (<Page blok={story.content} />)
   }
 
   return (
-  <Layout>
-    { content }
-  </Layout>
-)}
+    <Layout>
+      {content}
+    </Layout>
+  )
+}
 
 export default NotFoundPage
