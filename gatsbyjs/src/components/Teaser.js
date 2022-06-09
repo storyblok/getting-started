@@ -1,12 +1,12 @@
-import React from "react";
-import { storyblokEditable } from "@storyblok/react";
+import * as React from "react"
+import { storyblokEditable } from "gatsby-source-storyblok";
 
 const Teaser = ({ blok }) => {
   return (
-    <div className="py-8 mb-6" {...storyblokEditable(blok)} key={blok._uid}>
-      <h2 className="text-5xl font-bold text-center"> {blok.headline} </h2>
+    <div {...storyblokEditable(blok)}>
+      <h1>{blok.headline}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Teaser;
+export default Teaser
