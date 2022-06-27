@@ -3,7 +3,7 @@
 
   export async function load() {
     const storyblokApi = getStoryblokApi();
-    const { data } = await storyblokApi.get("cdn/stories/svelte", {
+    const { data } = await storyblokApi.get("cdn/stories/home", {
       version: "draft",
     });
 
