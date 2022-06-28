@@ -1,12 +1,10 @@
-import { defineNuxtConfig } from 'nuxt';
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
-  modules: [
-    ['@storyblok/nuxt-beta', { accessToken: 'OurklwV5XsDJTIE1NJaD2wtt' }],
-  ],
+  modules: [['@storyblok/nuxt', { accessToken: 'd6IKUtAUDiKyAhpJtrLFcwtt' }]],
   app: {
     head: {
       script: [{ src: 'https://cdn.tailwindcss.com' }],
     },
   },
-});
+})

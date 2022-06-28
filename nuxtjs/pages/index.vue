@@ -1,5 +1,5 @@
 <script setup>
-import { useStoryblok } from '@storyblok/nuxt'
+import { useStoryblok } from '@storyblok/nuxt-2'
 const { story, fetchState } = useStoryblok('home', { version: 'draft' })
 </script>
 

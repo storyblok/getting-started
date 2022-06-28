@@ -9,13 +9,13 @@
     "build": "svelte-kit build"
   },
   "devDependencies": {
-    "svelte": "^3.44.0",
+    "svelte": "^3.48.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next"
   },
   "type": "module",
   "dependencies": {
-    "@storyblok/svelte": "^2.0.1",
-    "axios": "^0.26.1"
+    "@storyblok/svelte": "^2.1.2",
+    "axios": "^0.27.2"
   }
 }
