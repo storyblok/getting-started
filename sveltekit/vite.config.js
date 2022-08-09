@@ -7,6 +7,9 @@ const config = {
     server: {
         https: true
     },
+    optimizeDeps: {
+        include: ["axios"],
+    }
 };
 
 export default config;
