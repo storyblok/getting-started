@@ -1,25 +1,26 @@
 <script context="module">
-    import { storyblokInit, apiPlugin } from "@storyblok/svelte";
-    import Feature from "../components/Feature.svelte";
-    import Grid from "../components/Grid.svelte";
-    import Page from "../components/Page.svelte";
-    import Teaser from "../components/Teaser.svelte";
+  import { storyblokInit, apiPlugin } from "@storyblok/svelte";
+  import Feature from "../components/Feature.svelte";
+  import Grid from "../components/Grid.svelte";
+  import Page from "../components/Page.svelte";
+  import Teaser from "../components/Teaser.svelte";
 
-    storyblokInit({
-        accessToken: "d6IKUtAUDiKyAhpJtrLFcwtt",
-        use: [apiPlugin],
-        components: {
-            feature: Feature,
-            grid: Grid,
-            page: Page,
-            teaser: Teaser,
-        },
-    });
+  storyblokInit({
+    accessToken: "d6IKUtAUDiKyAhpJtrLFcwtt",
+    use: [apiPlugin],
+    components: {
+      feature: Feature,
+      grid: Grid,
+      page: Page,
+      teaser: Teaser,
+    },
+  });
 </script>
+
 <script>
-      import "../app.css";
+  import "../app.css";
 </script>
 
 <main>
-    <slot />
+  <slot />
 </main>
