@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
-dist
-dist-v2
-lib/cypress/videos
-.svelte-kit
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
