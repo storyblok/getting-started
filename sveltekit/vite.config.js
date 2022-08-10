@@ -6,9 +6,6 @@ const config = {
     plugins: [sveltekit(), mkcert()],
     server: {
         https: true
-    },
-    optimizeDeps: {
-        include: ["axios"],
     }
 };
 
