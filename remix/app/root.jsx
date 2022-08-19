@@ -37,12 +37,17 @@ export default function App() {
     <html lang="en">
       <head>
         <Meta />
+
         <Links />
       </head>
+
       <body>
         <Outlet />
+
         <ScrollRestoration />
+
         <Scripts />
+
         <LiveReload />
       </body>
     </html>
