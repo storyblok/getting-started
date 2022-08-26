@@ -1,0 +1,4 @@
+[submodule "sveltekit"]
+	path = sveltekit
+	url = https://github.com/storyblok/sveltekit-ultimate-tutorial-series.git
+	branch = part-1-sveltekit-ut

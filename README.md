@@ -8,9 +8,21 @@ Follow the instruction on [Storyblok Getting Started Page](https://www.storyblok
 
 - Next.js
 - Gatsby.js
-- Nuxt
+- Nuxt 2
+- Nuxt 3
 - React
 - SvelteKit
+- Remix
+- Vue js
+
+
+## Submodules Scaffolding
+
+To get the code from the submodules, run the following command 
+
+```
+npm run prepare
+```
 
 ### Resources
 
