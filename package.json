@@ -1,0 +1,19 @@
+{
+  "name": "getting-started",
+  "version": "1.0.0",
+  "description": "framework demos for storyblok",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "git submodule update --init --recursive --remote"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storyblok/getting-started.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storyblok/getting-started/issues"
+  },
+  "homepage": "https://github.com/storyblok/getting-started#readme"
+}
