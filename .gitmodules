@@ -2,3 +2,7 @@
 	path = sveltekit
 	url = https://github.com/storyblok/sveltekit-ultimate-tutorial-series.git
 	branch = part-1-sveltekit-ut
+[submodule "nuxt-3"]
+	path = nuxt-3
+	url = https://github.com/storyblok/nuxt-ultimate-tutorial.git
+	branch = part-1
