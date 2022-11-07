@@ -13,7 +13,7 @@ import Feature from './components/Feature'
 
 
 storyblokInit({
-  accessToken: "d6IKUtAUDiKyAhpJtrLFcwtt",
+  accessToken: "OurklwV5XsDJTIE1NJaD2wtt",
   use: [apiPlugin],
   components: {
     page: Page,
