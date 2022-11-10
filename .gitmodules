@@ -6,3 +6,7 @@
 	path = nuxtjs-3
 	url = https://github.com/storyblok/nuxt-ultimate-tutorial.git
 	branch = part-1
+[submodule "nextjs"]
+	path = nextjs
+	url = git@github.com:storyblok/next.js-ultimate-tutorial.git
+	branch = part-1
