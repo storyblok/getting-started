@@ -10,3 +10,7 @@
 	path = reactjs
 	url = git@github.com:storyblok/storyblok-react-boilerplate.git
 	branch = master
+[submodule "nextjs"]
+	path = nextjs
+	url = git@github.com:storyblok/next.js-ultimate-tutorial.git
+	branch = part-1
