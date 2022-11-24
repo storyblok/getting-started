@@ -1,5 +1,5 @@
 {
-  "name": "astro-sdk-demo",
+  "name": "astro-starter-default",
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
@@ -8,11 +8,11 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^2.1.1",
-    "@storyblok/astro": "1.1.1",
-    "astro": "^1.6.0",
+    "@astrojs/tailwind": "^2.1.2",
+    "@storyblok/astro": "1.2.0",
+    "astro": "^1.6.10",
     "axios": "^0.27.2",
-    "tailwindcss": "3.2.1"
+    "tailwindcss": "3.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^0.1.2"
