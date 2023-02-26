@@ -1,12 +1,12 @@
-# Getting Started - Nuxt edition
+# Getting Started - Nuxt 2 edition
 
-This is an example `Hello World` project built with Storyblok and Nuxt.
+This is an example `Hello World` project built with Storyblok and Nuxt 2.
 
 > To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started).
 
 ## Stackblitz 
 
-[Edit on Stackblitz](https://stackblitz.com/edit/nuxt-5-minutes)
+[Storyblok SDK for Nuxt 2 Demo](https://stackblitz.com/edit/nuxt-2-sdk-demo)
 
 
 ## Configuration Steps

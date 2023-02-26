@@ -1,0 +1,16 @@
+[submodule "sveltekit"]
+	path = sveltekit
+	url = https://github.com/storyblok/sveltekit-ultimate-tutorial-series.git
+	branch = part-1-sveltekit-ut
+[submodule "nuxtjs-3"]
+	path = nuxtjs-3
+	url = https://github.com/storyblok/nuxt-ultimate-tutorial.git
+	branch = part-1
+[submodule "reactjs"]
+	path = reactjs
+	url = https://github.com/storyblok/storyblok-react-boilerplate.git
+	branch = master
+[submodule "nextjs"]
+	path = nextjs
+	url = https://github.com/storyblok/next.js-ultimate-tutorial.git
+	branch = part-1

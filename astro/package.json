@@ -1,0 +1,19 @@
+{
+  "name": "astro-starter-default",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^2.1.3",
+    "@storyblok/astro": "2.0.3",
+    "astro": "^1.9.2",
+    "tailwindcss": "3.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^0.1.2"
+  }
+}
