@@ -17,7 +17,7 @@ storyblokInit({
     feature: Feature
   },
   apiOptions: {
-    region: ''
+    region: sbConfig.options.region
   }
 });
 
