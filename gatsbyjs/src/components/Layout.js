@@ -15,6 +15,9 @@ storyblokInit({
     teaser: Teaser,
     grid: Grid,
     feature: Feature
+  },
+  apiOptions: {
+    region: ''
   }
 });
 
