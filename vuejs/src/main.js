@@ -11,6 +11,9 @@ const app = createApp(App);
 app.use(StoryblokVue, {
   accessToken: 'd6IKUtAUDiKyAhpJtrLFcwtt',
   use: [apiPlugin],
+  apiOptions: {
+    region: ''
+  }
 });
 
 app.component('Grid', Grid);
