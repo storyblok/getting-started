@@ -14,3 +14,7 @@
 	path = nextjs
 	url = https://github.com/storyblok/next.js-ultimate-tutorial.git
 	branch = part-1
+[submodule "gatsbyjs"]
+	path = gatsbyjs
+	url = https://github.com/storyblok/gatsby-ultimate-tutorial.git
+	branch = part-1
