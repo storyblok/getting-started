@@ -24,6 +24,9 @@ storyblokInit({
   accessToken: "d6IKUtAUDiKyAhpJtrLFcwtt",
   use: [apiPlugin],
   components,
+  apiOptions: {
+    region: ''
+  }
 });
 
 export const meta = () => ({
