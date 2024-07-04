@@ -1,4 +1,8 @@
-# Getting Started
+# ⛔️ DEPRECATED: Getting Started
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+This project has been deprecated in favor of the [Storyblok Technologies](https://www.storyblok.com/technologies) page, allowing you to kickstart a new project within minutes.
+___
 
 > Repository of the Getting Started (Hello World) projects built with Storyblok and various frontend frameworks.
 
